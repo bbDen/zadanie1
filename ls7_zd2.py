@@ -4,7 +4,10 @@
 stroka=' Я не знаю что написать    потому будет простой текст '
 
 def changeWord(stroka):
-    list_char=[]
-    list_char.extend(stroka.split())
-    return '*'.join(list_char)
+    if isinstance(stroka,str):
+        list_char=[]
+        list_char.extend(stroka.split())
+        return '*'.join(list_char)
+    else:
+        raise ValueError
 print(changeWord(stroka))
