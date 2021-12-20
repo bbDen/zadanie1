@@ -1,5 +1,5 @@
 import unittest
-from zadacha_1.zadachi.zd3 import Math
+from zd3 import Math
 
 
 class TestMath(unittest.TestCase):
